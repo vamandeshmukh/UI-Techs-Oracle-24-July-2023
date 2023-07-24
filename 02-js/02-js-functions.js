@@ -54,11 +54,28 @@
 // console.log("abc" - 5);
 // console.log("abc" - 5);
 
-const addNums = (i, j) => {
-    // return i + j;
-    console.log(i + j); 
-};
+// const addNums = (i = 10, j = 20) => {
+//     // return i + j;
+//     console.log(i + j);
+// };
 
-let output = addNums(10, 20);
-console.log(output); // undefined 
+// addNums();
+// addNums(2); // 22 
+// addNums(2, 3);
+// addNums(2, 3, 4);
+// addNums(undefined, 2); // 12 
+
+
+// let output = addNums(2, 3);
+// console.log(output); // undefined 
+
+// Asynchronous JS  
+
+console.log('one');
+
+setTimeout(() => {
+    console.log('two'); // DB call
+}, 2000);
+
+console.log('three');
 
