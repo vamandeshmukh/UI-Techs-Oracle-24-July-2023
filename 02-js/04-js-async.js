@@ -7,22 +7,29 @@
 
 // console.log('one');
 
-// setTimeout(() => {
-//     console.log('two'); // DB call
-// }, 2000);
+// const getFun = () => {
+//     setTimeout(() => {
+//         return { text: 'two' };
+//     }, 2000);
+// };
+
+// const fun = getFun();
+// console.log(fun.text);
 
 // console.log('three');
 
-console.log('one');
+// solution 1 - callback 
 
-const getFun = () => {
+console.log('one');
+const getFun = (cb) => {
     setTimeout(() => {
-        return { text: 'two' };
+        cb({ text: 'two' });
     }, 2000);
 };
 
-const fun = getFun();
-console.log(fun.text);
+getFun((arg) => {
+    console.log(arg.text);
+    console.log('three');
+});
 
-console.log('three');
 
