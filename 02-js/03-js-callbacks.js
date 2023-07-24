@@ -30,19 +30,44 @@
 
 
 
+// const fun = (arg) => {
+//     console.log('fun called');
+//     arg(); // callback 
+// };
+
+// const anotherFun = () => {
+//     console.log('anotherFun called');
+// };
+
+// fun(anotherFun);
+
+// fun(() => {
+//     console.log('anonymous function called');
+// });
+
+
 const fun = (arg) => {
     console.log('fun called');
-    arg();
+    arg({ info: 'Pune' }); // callback 
 };
 
-const anotherFun = () => {
+const anotherFun = (abc) => {
     console.log('anotherFun called');
+    console.log(abc.info);
 };
 
 fun(anotherFun);
 
-fun(() => {
-    console.log('anonymous function called');
-});
+// How to make JS synchronous when needed? 
+
+// code 1
+// code 2
+
+
+
+
+
+
+
 
 
