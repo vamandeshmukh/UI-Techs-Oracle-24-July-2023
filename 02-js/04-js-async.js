@@ -63,3 +63,10 @@ getFun()
         console.log('three');
     });
 
+// solution 3 - async await 
+
+
+
+
+
+
