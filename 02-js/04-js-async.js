@@ -46,9 +46,9 @@ const getFun = () => {
 
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            let error = false;
+            let error = true; // true, false 
             if (error) {
-                reject({ error: 'value not available' });
+                reject({ message: 'value not available' });
             }
             else {
                 resolve({ text: 'two' });
@@ -61,9 +61,15 @@ getFun()
     .then((fun) => {
         console.log(fun.text);
         console.log('three');
+    })
+    .catch((error) => {
+        console.log(error.message);
     });
 
-// solution 3 - async await 
+
+
+
+    // solution 3 - async await 
 
 
 
