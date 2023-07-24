@@ -40,13 +40,39 @@
 // - resolve
 // - reject 
 
+// console.log('one');
+
+// const getFun = () => {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             let error = false; // true, false 
+//             if (error) {
+//                 reject({ message: 'value not available' });
+//             }
+//             else {
+//                 resolve({ text: 'two' });
+//             }
+//         }, 2000);
+//     });
+// };
+
+// getFun()
+//     .then((fun) => {
+//         console.log(fun.text);
+//         console.log('three');
+//     })
+//     .catch((error) => {
+//         console.log(error.message);
+//     });
+
+// solution 3 - async await to handle promise 
+
 console.log('one');
 
 const getFun = () => {
-
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            let error = true; // true, false 
+            let error = false; // true, false 
             if (error) {
                 reject({ message: 'value not available' });
             }
@@ -57,22 +83,10 @@ const getFun = () => {
     });
 };
 
-getFun()
-    .then((fun) => {
-        console.log(fun.text);
-        console.log('three');
-    })
-    .catch((error) => {
-        console.log(error.message);
-    });
+const fun = async () => {
+    const output = await getFun();
+    console.log(output.text);
+    console.log('three');
+};
 
-
-
-
-    // solution 3 - async await 
-
-
-
-
-
-
+fun();
