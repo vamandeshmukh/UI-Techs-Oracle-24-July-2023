@@ -36,5 +36,5 @@ app.get('/contact',
 // app.listen(portNumber, () => { });
 
 app.listen(portNumber, () => {
-    console.log(`Server is running at ${portNumber}.`);
+    console.log(`Server is running at http://localhost:${portNumber}/welcome`);
 });
