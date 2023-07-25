@@ -1,3 +1,10 @@
+// steps - 
+// 1. Write codes in package.json and index.js
+// On CMD run - 
+// 2. npm install 
+// 3. npm start 
+// 4. On Browser, visit http://localhost:9000/welcome
+// 5. To stop - Ctrl + C Y 
 
 const express = require('express');
 const app = express();
