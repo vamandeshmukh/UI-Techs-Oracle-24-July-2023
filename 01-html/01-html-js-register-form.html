@@ -3,15 +3,39 @@
 
 <head>
 
-    <script>
-
-    </script>
-
 </head>
 
 <body>
+    <h1>Register Form</h1>
+    <form onsubmit="registerForm(); return false">
+        <input type="text" id="username" placeholder="Username" required />
+        <br>
+        <input type="password" id="password" placeholder="Password" required />
+        <br>
+        <button type="submit">Register</button>
+    </form>
 
+    <script>
+        const registerForm = () => {
+            let username = document.getElementById('username').value;
+            let password = document.getElementById('password').value;
+            // let passwordValidation = /^*[a-z]/;
+            console.log(username);
+            if (username.length < 4 || username.length > 8) {
+                alert('Username should be between 4 and 8 chars.');
+                return false;
+            }
+            if (password.length < 4 || password.length > 8
+                // || !passwordValidation.test(password)
+            ) {
+                alert('password should be between 4 and 8 chars and should contain a-z, A-Z, 1-9 @.');
+                return false;
+            }
+            // alert('Registration successful');
+            window.location.href = '02-html-js-login-form.html';
+
+        };
+    </script>
 </body>
 
 </html>
-
