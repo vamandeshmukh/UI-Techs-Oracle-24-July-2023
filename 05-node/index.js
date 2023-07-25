@@ -11,9 +11,14 @@ const express = require('express');
 const app = express();
 const portNumber = 9000;
 
-
 // app.get(arg1, arg2);
 // app.get('/API', () => { });
+
+app.get('/',
+    (req, res) => {
+        console.log('home');
+        res.send('Home page...');
+    });
 
 app.get('/welcome',
     (req, res) => {
@@ -26,8 +31,6 @@ app.get('/contact',
         console.log('contact');
         res.send('Please contact us...');
     });
-
-
 
 // app.get();
 // app.post();
