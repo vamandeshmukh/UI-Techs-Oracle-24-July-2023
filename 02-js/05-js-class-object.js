@@ -13,11 +13,11 @@ class Animal {
     };
 
     sound() {
-        console.log(this);
+        console.log(this.petName);
     };
 
     sound2 = () => {
-        console.log(this);
+        console.log(this.petName);
     };
 }
 
@@ -29,18 +29,21 @@ class Animal {
 // console.log(obj.petName);
 // obj.sound();
 
-const obj2 = new Animal('Sonu', 'Pedigree');
-console.log(obj2.petName, obj2.food);
-obj2.sound();
-obj2.sound2(); // error 
+// const obj2 = new Animal('Sonu', 'Pedigree');
+// console.log(obj2.petName, obj2.food);
+// obj2.sound();
+// obj2.sound2(); // error 
 
 
 class Dog extends Animal {
 
 }
 
-const obj3 = new Dog();
-console.log(obj3);
+const obj3 = new Dog('Monu', 'chapati');
+console.log(obj3.petName);
+obj3.sound();
+obj3.sound2();
+
 
 
 
@@ -56,4 +59,6 @@ console.log(obj3);
 
 // fun1();
 // fun2();
+
+
 
