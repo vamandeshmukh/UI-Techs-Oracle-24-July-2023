@@ -1,6 +1,6 @@
 
 const express = require('express');
-const app = express;
+const app = express();
 const portNumber = 9000;
 
 
@@ -12,6 +12,13 @@ app.get('/welcome',
         console.log('welcome');
         res.send('Welcome to my app...');
     });
+
+app.get('/contact',
+    (req, res) => {
+        console.log('contact');
+        res.send('Please contact us...');
+    });
+
 
 
 // app.get();
