@@ -19,16 +19,16 @@
         const registerForm = () => {
             let username = document.getElementById('username').value;
             let password = document.getElementById('password').value;
-            // let passwordValidation = /^*[a-z]/;
-            console.log(username);
+            let passwordValidation = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#])[A-Za-z\d@#]{4,8}$/;
+            console.log(username, password);
             if (username.length < 4 || username.length > 8) {
                 alert('Username should be between 4 and 8 chars.');
                 return false;
             }
             if (password.length < 4 || password.length > 8
-                // || !passwordValidation.test(password)
+                || !passwordValidation.test(password)
             ) {
-                alert('password should be between 4 and 8 chars and should contain a-z, A-Z, 1-9 @.');
+                alert('password should be between 4 and 8 chars and should contain a-z, A-Z, 1-9 @#.');
                 return false;
             }
             // alert('Registration successful');
