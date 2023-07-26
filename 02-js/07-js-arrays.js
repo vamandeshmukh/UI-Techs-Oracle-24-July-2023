@@ -61,13 +61,9 @@ const obj6 = { 0: 'abc', 1: 'def', 2: 'ghi' };
 // const fun6 = a => a + 10;
 
 
-const arr9 = ['abc', 'def', 'ghi'];
-
-const num = arr9.findIndex(ind => typeof (ind) === "number");
-
-console.log(num);
-
-
+// const arr9 = ['abc', 'def', 'ghi'];
+// const num = arr9.findIndex(ind => typeof (ind) === "number");
+// console.log(num);
 
 
 
