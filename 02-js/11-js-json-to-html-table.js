@@ -71,3 +71,7 @@ const getUserData = () => {
 
 getUserData();
 
+// The above code is an example of GET request.
+// To make a POST request -
+// https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+
