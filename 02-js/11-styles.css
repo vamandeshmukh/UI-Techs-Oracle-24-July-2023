@@ -1,0 +1,23 @@
+#main {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    margin: 10px;
+}
+
+table,
+th,
+td {
+    border: 1px solid;
+    border-color: black;
+    border-collapse: collapse;
+
+}
+
+.my-style {
+    color: darkgray;
+    font-family: 'Trebuchet MS', Arial;
+}
+
+#table-data {
+    color: darkgrey;
+}
