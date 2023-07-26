@@ -1,6 +1,7 @@
 
 const url = 'https://jsonplaceholder.typicode.com/users';
 const userData = document.getElementById('user-data');
+const tableData = document.getElementById('table-data');
 
 const getUserData = () => {
     let temp = '';
@@ -12,9 +13,11 @@ const getUserData = () => {
         .then((res) => {
             res.forEach((user) => {
                 console.log(user);
-                temp += `<p>${user.username}</p>`;
+                temp += `<tr> <td>${user.name} </td>
+                <td>${user.username} </td>
+                <td>${user.email} </td></tr>`;
             });
-            userData.innerHTML = temp;
+            tableData.innerHTML = temp;
         })
         .catch(err => console.log(err));
 };
