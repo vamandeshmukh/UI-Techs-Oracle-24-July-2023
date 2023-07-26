@@ -54,14 +54,14 @@ const getUserData = () => {
             res.forEach((user) => {
                 console.log(user);
                 temp += `<tr> 
-                <td>${user.id} </td>
-                <td>${user.name} </td>
-                <td>${user.username} </td>
-                <td>${user.email} </td>
-                <td>${user.address.city} </td>
-                <td>${user.phone} </td>
-                <td>${user.website} </td>
-                <td>${user.company.name} </td>
+                <td>${user.id}</td>
+                <td>${user.name}</td>
+                <td>${user.username}</td>
+                <td>${user.email}</td>
+                <td>${user.address.city}</td>
+                <td>${user.phone}</td>
+                <td>${user.website}</td>
+                <td>${user.company.name}</td>
                 </tr>`;
             });
             tableData.innerHTML = temp;
