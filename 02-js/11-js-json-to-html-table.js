@@ -25,7 +25,7 @@ const getUserData = () => {
                 <td>${user.address.city} </td>
                 <td>${user.phone} </td>
                 <td>${user.website} </td>
-                <td>${user.cpmpany} </td>
+                <td>${user.company.name} </td>
                 </tr>`;
             });
 
