@@ -6,6 +6,9 @@ fetch(url)
         return resp.json();
     })
     .then((res) => {
-        console.log(res);
+        res.forEach((user) => {
+            console.log(user);
+        });
     })
     .catch(err => console.log(err));
+
