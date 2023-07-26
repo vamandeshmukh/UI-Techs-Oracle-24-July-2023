@@ -1,9 +1,9 @@
 
-// 'D:\VamanPro\Codes\00_Oracle_July_2023\02-js\data.json';
 
 const fs = require('fs');
 
-const filePath = './data.json';
+// const filePath = './data.json';
+const filePath = 'D:/VamanPro/Codes/00_Oracle_July_2023/02-js/data.json';
 
 let jsonToJs = '';
 
@@ -16,5 +16,6 @@ fs.readFile(filePath, (err, data) => {
         console.log(jsonToJs);
     }
 });
+
 
 
