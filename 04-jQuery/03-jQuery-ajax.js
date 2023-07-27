@@ -5,22 +5,22 @@
 
 const getBlogPost = () => {
 
-        const xhr = new XMLHttpRequest();
+    // const xhr = new XMLHttpRequest();
 
-        xhr.open('GET', 'https://jsonplaceholder.typicode.com/posts/1', true);
+    // xhr.open('GET', 'https://jsonplaceholder.typicode.com/posts/1', true);
 
-        xhr.send();
+    // xhr.send();
 
-        xhr.onload = () => {
+    // xhr.onload = () => {
 
-            const resp = JSON.parse(xhr.responseText);
-            document.getElementById('title').innerHTML = resp.title;
-            document.getElementById('body').innerHTML = resp.body;
-        };
+    //     const resp = JSON.parse(xhr.responseText);
+    //     document.getElementById('title').innerHTML = resp.title;
+    //     document.getElementById('body').innerHTML = resp.body;
+    // };
 
-        xhr.onerror = () => {
-            console.log('error');
-        };
+    // xhr.onerror = () => {
+    //     console.log('error');
+    // };
 };
 
 
@@ -29,17 +29,27 @@ const getBlogPost = () => {
 $(document).ready(() => {
     $('#blog-btn').on('click', () => {
         $.ajax({
-            url: 'https://jsonplaceholder.typicode.com/posts/1',
+            url: 'https://jsonplaceholder.typicode.com/posts/1111',
             type: 'GET',
             dataType: 'json',
             success: (resp) => {
                 $('#title').text(resp.title);
                 $('#body').text(resp.body);
             },
-            error: () => { }
+            error: (err) => {
+                $('#title').text(err.statusText);
+            }
         });
     });
 });
+
+
+$(() => {
+    $('#drag').draggable();
+})
+
+
+
 
 
 

@@ -2,7 +2,17 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
 </head>
+
+<style>
+    .draggable {
+        width: 200px;
+        height: 150px;
+        padding: 5px;
+        background-color: aqua;
+    }
+</style>
 
 <body>
     <div>
@@ -16,9 +26,17 @@
             <p id="body"></p>
         </div>
 
+        <div>
+            <h1>jQuery UI</h1>
+            <div id="drag" class="draggable">
+                <p>Drag me!</p>
+            </div>
+        </div>
+
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
     <script src='./03-jQuery-ajax.js'></script>
 </body>
 
