@@ -32,6 +32,12 @@ $(document).ready(
 
 
 
+// jQuery -
+
+// DOM Manipulation
+// DOM Traversal 
+
+
 
 
 
