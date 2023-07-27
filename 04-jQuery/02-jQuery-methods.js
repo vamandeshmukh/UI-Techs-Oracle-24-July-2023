@@ -58,17 +58,31 @@
 //     // $('#jq-div').hide();
 // });
 
+// append, prepend 
 
+// $('#jq-demo').click(() => {
+
+//     $('#jq-para').append('<p>jQuery Demo appended</p>');
+//     $('#jq-para').prepend('<p>jQuery Demo prepended</p>');
+//     $('#jq-para').append('<p>jQuery Demo appended</p>', '<p>jQuery Demo appended</p>', '<p>jQuery Demo appended</p>');
+//     $('#jq-para').before('<p>jQuery Demo appended</p>');
+//     $('#jq-para').after('<p>jQuery Demo appended</p>');
+
+// });
+
+// remove and empty 
 
 $('#jq-demo').click(() => {
 
-    $('#jq-para').append('<p>jQuery Demo appended</p>');
-    $('#jq-para').prepend('<p>jQuery Demo prepended</p>');
-    $('#jq-para').append('<p>jQuery Demo appended</p>', '<p>jQuery Demo appended</p>', '<p>jQuery Demo appended</p>');
-    $('#jq-para').before('<p>jQuery Demo appended</p>');
-    $('#jq-para').after('<p>jQuery Demo appended</p>');
+    $('#jq-div').remove();
+    // $('#jq-div').empty();
 
 });
+
+
+
+
+
 
 
 
