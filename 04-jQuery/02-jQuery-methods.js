@@ -84,18 +84,35 @@
 
 // Chaining jQuery actions 
 
+// $('#jq-demo').click(() => {
+
+//     // $('#jq-para-2').text('Some text added');
+//     // $('#jq-para-2').addClass('my-style');
+
+//     $('#jq-para-2')
+//         .text('Some text added')
+//         .addClass('my-style');
+// });
+
+
+// animation 
+
+// $('#jq-demo').click(() => {
+
+//     $('#jq-para-2')
+//         .hide(2000)
+//         .fadeIn(2000);
+// });
+
+// traversal 
+
+
 $('#jq-demo').click(() => {
 
-    // $('#jq-para-2').text('Some text added');
-    // $('#jq-para-2').addClass('my-style');
+    // $('#jq-child-1').children().remove();
+    $('#jq-child-1').parent().remove();
 
-    $('#jq-para-2')
-        .text('Some text added')
-        .addClass('my-style');
 });
-
-
-
 
 
 
