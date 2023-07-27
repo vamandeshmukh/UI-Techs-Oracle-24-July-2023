@@ -72,13 +72,27 @@
 
 // remove and empty 
 
+// $('#jq-demo').click(() => {
+
+//     // $('#jq-div').remove();
+//     // $('#jq-div').empty();
+//     // $('p').remove();
+//     $('p').remove('.my-style');
+
+// });
+
+
+// Chaining jQuery actions 
+
 $('#jq-demo').click(() => {
 
-    $('#jq-div').remove();
-    // $('#jq-div').empty();
+    // $('#jq-para-2').text('Some text added');
+    // $('#jq-para-2').addClass('my-style');
 
+    $('#jq-para-2')
+        .text('Some text added')
+        .addClass('my-style');
 });
-
 
 
 
